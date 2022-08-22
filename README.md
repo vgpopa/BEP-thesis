@@ -6,4 +6,4 @@ Additionally, PINNs were used for inverse problems to derive an unknown coeffici
 
 As of now, PINNs are still very early in development and stand no match against traditional numerical methods to a known PDE. They may however provide a useful alternative in the future as they are constantly being improved. 
 
-The thesis has been written as part of the double bachelor's degree programme Applied Physics \& Applied Mathematics at Delft University of Technology. Link to thesis will become soon available.
+The thesis has been written as part of the double bachelor's degree programme Applied Physics \& Applied Mathematics at Delft University of Technology. Link to thesis will become available soon.
