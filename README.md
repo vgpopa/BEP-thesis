@@ -1,2 +1,9 @@
-# BEP-thesis
-Python code for BEP thesis
+# Python code for BEP thesis
+
+In an attempt to find alternatives for solving partial differential equations (PDEs) with traditional numerical methods, a new field has emerged which incorporates the residual of a PDE into the loss function of an Artifical Neural Network. This method is called Physics Informed Neural Network (PINN). In this thesis, we study dense neural networks (DNN), including codes developed in the context of this bachelor project, derive the backpropagation equations necessary for training and use different configurations in a DNN to test its interpolating accuracy. We distinguish between a-PINNs which use automatic differentiation to evaluate a PDE and n-PINNs which approximates differential operators in the PDE with numerical differentiation, and compare both models on the harmonic oscillator ODE, the 1D heat equation and the 1-soliton and 2-soliton solution of the Korteweg-De Vries (KdV) equation. Both models could accurately converge to the solution, except to the 2-soliton solution, where the a-PINN outclassed the n-PINN. Furthermore, we tested a highly nonlinear problem of the KdV equation, which can be described by a train of solitons, and observed that both a-PINNs and n-PINNs are inaccurate for too nonlinear problems. Adding samples from a numerical solution leads to good agreement though. 
+
+Additionally, PINNs were used for inverse problems to derive an unknown coefficient in a PDE and proved to be highly accurate for noiseless data. When data was used with generated 10\% noise from a uniform distribution, the PINN results' relative error stayed within a margin of under 2\%. However, inverse PINNs are much more inefficient compared to nonlinear least squares methods like the Levenberg–Marquardt algorithm. 
+
+As of now, PINNs are still very early in development and stand no match against traditional numerical methods to a known PDE. They may however provide a useful alternative in the future as they are constantly being improved. 
+
+The thesis has been written as part of the double bachelor's degree programme Applied Physics \& Applied Mathematics at Delft University of Technology. 
