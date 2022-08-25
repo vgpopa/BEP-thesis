@@ -6,6 +6,11 @@ Additionally, PINNs were used for inverse problems to derive an unknown coeffici
 
 As of now, PINNs are still very early in development and stand no match against traditional numerical methods to a known PDE. They may, however, provide a useful alternative in the future as they are constantly being improved. 
 
-Python codes used in this thesis are publicly available via \url{https://github.com/vgpopa/BEP-thesis}. 
 
 The thesis has been written as part of the double bachelor's degree programme Applied Physics \& Applied Mathematics at Delft University of Technology. Link to thesis will become available soon.
+
+In the folder Dense Neural Networks from scratch, we implement a dense network using gradient descent, and extend our model to be compatible with more complex optimization algorithms from scipy.optimize.
+
+In the folder PINNs, we implement a-PINNs and n-PINNs with Pytorch and consider different PDEs.
+
+Necessary libraries to run all codes: os, time, numpy, matplotlib, and torch.
