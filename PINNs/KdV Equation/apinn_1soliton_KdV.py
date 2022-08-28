@@ -78,6 +78,8 @@ Xphysics = Xphysics[Xphysics[:,0] != x_min] #exclude BCs
 Xphysics = Xphysics[Xphysics[:,0] != x_max]
 x_physics = Xphysics[:,[0]].to(mydevice)
 t_physics = Xphysics[:,[1]].to(mydevice)
+x_physics.requires_grad_(True)
+t_physics.requires_grad_(True)
 Xtrain = torch.cat([x_physics,t_physics],axis=1).to(mydevice)
 
 #IC
